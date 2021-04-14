@@ -4,7 +4,9 @@ sudo apt install default-jdk -y
 # install maven
 sudo apt install maven -y
 
-
+# install firefox
+sudo apt-get install xvfb firefox
+sudo Xvfb :10 -ac
 
 # install jenkins server
 
