@@ -45,18 +45,4 @@ class AmazonNavLinkTest {
 		String expected = "Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in";
 		assertEquals(expected, driver.getTitle());
 	}
-
-	@Test
-	@DisplayName(" Amazon Test :: Todays deal Link Verification")
-	void testTodaysDealNavigationLink() {
-		// find todays deal link
-		WebElement todayLink = driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(4)"));
-		// test evaluation
-		assertTrue(todayLink.isDisplayed());
-		assertTrue(todayLink.isEnabled());
-		todayLink.click();
-		String expected = "Amazon.in - Today's Deals";
-		assertEquals(expected, driver.getTitle());
-	}
-
 }
