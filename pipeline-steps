@@ -1,3 +1,6 @@
+# updating system repos.
+sudo apt-get update
+
 # install jdk
 sudo apt install default-jdk -y
 
