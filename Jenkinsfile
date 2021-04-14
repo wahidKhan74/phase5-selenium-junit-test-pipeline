@@ -9,13 +9,28 @@ pipeline {
     
     	stage('compile stage') {
             steps {
-                sh 'mvn --version'
+                echo '----------------- This is a compile phase ----------'
+                sh 'mvn clean compile'
+            }
+        }
+        
+        stage('test stage') {
+            steps {
+                echo '----------------- This is a test phase ----------'
+                sh 'mvn clean test'
             }
         }
         
         stage('build stage') {
             steps {
-                sh 'mvn --version'
+                echo '----------------- This is a build phase ----------'
+                sh 'mvn clean package -DskipsTest'
+            }
+        }
+        
+        stage('deploy stage') {
+            steps {
+                 echo '----------------- This is a deploy phase ----------'
             }
         }
         
