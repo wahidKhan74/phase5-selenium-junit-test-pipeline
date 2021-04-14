@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.simplilearn.testing.AmazonNavLinkTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.447 s - in com.simplilearn.testing.AmazonNavLinkTest
