@@ -42,7 +42,7 @@ class AmazonNavLinkTest {
 		assertTrue(mobileLink.isDisplayed());
 		assertTrue(mobileLink.isEnabled());
 		mobileLink.click();
-		String expected = "Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in";
+		String expected = "Amazon Pay";
 		assertEquals(expected, driver.getTitle());
 	}
 }
